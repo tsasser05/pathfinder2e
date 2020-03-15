@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/tsasser05/dieroll"
-	"github.com/tsasser05/pathfinder2e2e/abilities"
+	"github.com/tsasser05/pathfinder2e/abilities"
 	"os"
 	"strconv"
 )
