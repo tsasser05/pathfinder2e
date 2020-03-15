@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
+	"github.com/tsasser05/dieroll"
+	"github.com/tsasser05/pathfinder2e2e/abilities"
 	"os"
 	"strconv"
-	"github.com/tsasser05/pathfinder_2e_first_level_chargen/abilities"
-	"github.com/tsasser05/dieroll"
 )
 
 func main() {
@@ -48,13 +48,13 @@ func main() {
 
 	fmt.Println("\n")
 	fmt.Println("-------------------------------------------------------")
-	fmt.Println("Test 5: Test Abilities") 
+	fmt.Println("Test 5: Test Abilities")
 	fmt.Println("-------------------------------------------------------")
 
 	abil := abilities.Abilities{}
 	abil.Roll()
 	abil.Display()
-	
+
 	fmt.Println("\n")
 	fmt.Println("-------------------------------------------------------")
 	fmt.Println("End testing")
