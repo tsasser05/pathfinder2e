@@ -9,6 +9,15 @@ import (
 )
 
 func main() {
+
+	if argCount != 2 {
+		fmt.Println("Incorrect number of args.  Call this program with max, num.")
+		fmt.Println("  max = max of the die.  4, 6, 8, 10, 12, 20 or 100.")
+		fmt.Println("  num = number of dice to roll.")
+		fmt.Println("go run main.go 6 3")
+		os.Exit(3)
+	} // if
+
 	max_str := os.Args[1]
 	num_str := os.Args[2]
 
@@ -16,11 +25,6 @@ func main() {
 	num, _ := strconv.Atoi(num_str)
 
 	argCount := len(os.Args[1:])
-
-	if argCount != 2 {
-		fmt.Println("Incorrect number of args.  Call this program with max, num")
-		os.Exit(3)
-	} // if
 
 	fmt.Println("\n")
 	fmt.Println("-------------------------------------------------------")
@@ -38,12 +42,13 @@ func main() {
 	fmt.Println("\n")
 	fmt.Println("-------------------------------------------------------")
 	fmt.Println("Test 2: dieroll.RollStat()")
+	fmt.Println("   Tests the rolling of stats using 4d6.")
 	fmt.Println("-------------------------------------------------------")
 	fmt.Println("The stat rolled was:  ", dieroll.RollStat())
 
 	fmt.Println("\n")
 	fmt.Println("-------------------------------------------------------")
-	fmt.Println("Test 3: dieroll.RandomKey()")
+	fmt.Println("Test 3: dieroll.RandomKey() DOES NOTHING NOW")
 	fmt.Println("-------------------------------------------------------")
 
 	fmt.Println("\n")

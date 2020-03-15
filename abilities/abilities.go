@@ -1,19 +1,18 @@
 package abilities
 
 import (
-	"github.com/tsasser05/dieroll"
 	"fmt"
-) 
+	"github.com/tsasser05/dieroll"
+)
 
 type Abilities struct {
-	Strength int
-	Dexterity int
+	Strength     int
+	Dexterity    int
 	Constitution int
 	Intelligence int
-	Wisdom int
-	Charisma int
+	Wisdom       int
+	Charisma     int
 } // Abilities
-
 
 func (a *Abilities) Roll() {
 	a.Strength = dieroll.RollStat()
@@ -22,9 +21,8 @@ func (a *Abilities) Roll() {
 	a.Intelligence = dieroll.RollStat()
 	a.Wisdom = dieroll.RollStat()
 	a.Charisma = dieroll.RollStat()
-	
-} // Roll()
 
+} // Roll()
 
 func (a *Abilities) Display() {
 	fmt.Println("Abilities")
